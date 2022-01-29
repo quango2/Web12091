@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>BT5</title>
+    <style>
+      img {
+        width: 250px;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="https://camnanghaiphong.vn/upload/m538/images/ras.png" alt="" id="demo" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $("img").on({ mouseenter: hv, mouseleave: lv });
+
+      function hv() {
+        $(this).css("transform", "scale(1.5)");
+        console.log($(this));
+      }
+      function lv() {
+        $(this).css("transform", "");
+        console.log($(this));
+      }
+    </script>
+  </body>
+</html>

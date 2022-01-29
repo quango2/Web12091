@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <h3 style="width: 400px; max-width: 100%">
+      Lần lượt di chuyển con trỏ chuột lên hình và ra khỏi hình để xem hiệu ứng
+      đổi hình.
+    </h3>
+    <div
+      id="out"
+      style="width: 300px; overflow: hidden; flex-wrap: nowrap; display: flex"
+    >
+      <img src="https://www.rd.com/wp-content/uploads/2020/11/GettyImages-889552354-e1606774439626.jpg" width="300" alt=""/>
+      <img src="https://i.ytimg.com/vi/A4_Czor6KVY/maxresdefault.jpg" width="300"alt=""/>
+    </div>
+    <script>
+      const out = document.querySelector("#out");
+      out.onmouseenter = () => {
+        out.firstElementChild.style.display = "none";
+      };
+      out.onmouseleave = () => {
+        out.firstElementChild.style.display = "";
+      };
+    </script>
+  </body>
+</html>

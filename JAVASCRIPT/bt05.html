@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="out" align="center"> HTML-JAVASCRIPT</div>
+    <script>
+      const out = document.querySelector("#out");
+      var text = out.innerText;
+      setInterval(() => {
+        const lastLetter = text.charAt(text.length - 1);
+        const newText = lastLetter + text.substr(0, text.length - 1);
+        out.innerText = newText;
+        text = newText;
+      }, 0.1 * 1000);
+    </script>
+  </body>
+</html>
